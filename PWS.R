@@ -70,7 +70,7 @@ object_Singlet <- SubsetData(object_name,subset.name='Doublet',accept.value='Sin
 a=length(colnames(object_name))
 print(a)
 combined_analysis<-a
-##############################################################################3
+###################注意去重后，需要重新PCA找高可变基因###
 P1=readRDS("/dellfsqd2/P1/combined_analysis.rds")
 P1$stim="P1"
 P3=readRDS("/dellfsqd2/P2/combined_analysis.rds")
